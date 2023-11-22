@@ -1,0 +1,814 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --text-third: #ff7eee;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --bg-third: #20202abc;
+    --bg-user-input: #353542e0;
+    --transition-speed: 600ms;
+}
+
+body {
+    color: black;
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+    overflow: scroll;
+    z-index: 9999;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+#userprofile-svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 0.8rem;
+}
+
+.nav-link svg {
+    width: 1.4rem;
+    min-width: 1.2rem;
+    margin: 0 1.5rem;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.fa-primary {
+    color: #ff7eee;
+}
+
+.fa-secondary {
+    color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+}
+
+/* Css of Tabs  */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.s-navbar-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 50px;
+    list-style: none;
+}
+
+.tabs_radio {
+    display: none;
+
+}
+
+.s-nav-item {
+    display: contents;
+}
+
+.tabs_content {
+    display: none;
+    order: 1;
+    margin-top: 10px;
+
+}
+
+.tabs_radio:checked+.tabs_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.tabs_content span {
+    justify-self: flex-end;
+}
+
+.tabs_content svg {
+    justify-self: flex-start;
+    width: 1.2rem;
+    min-width: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+.tabs_radio:checked+.nav-tab-label {
+    color: var(--text-third);
+    color: #ff7eee;
+}
+
+.tabs_radio:checked+.nav-tab-label+.tabs_content {
+    display: inline;
+}
+
+
+/* CSS of Server */
+.server-window {
+    display: grid;
+    background-color: var(--bg-secondary);
+    grid-gap: 0.2ch;
+    color: var(--text-primary);
+}
+
+.s-nav {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--bg-third);
+}
+
+
+.s-header {
+    grid-column: span 3;
+    grid-row: 1;
+    background: var(--bg-primary);
+}
+
+.header-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: var(--bg-primary);
+}
+
+.header-items {
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    border-radius: 0.5rem;
+}
+
+.header-items:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.header-items svg {
+    width: 1.8rem;
+    min-width: 1.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.s-members-box {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: var(--bg-primary);
+}
+
+.members {
+    display: flex;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    border-radius: 0.5rem;
+}
+
+.members:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.members svg {
+    margin: 5px;
+    padding: 0;
+    width: 1.8rem;
+    min-width: 1.5rem;
+}
+
+.s-members-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    text-align: start;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    font-size: 1.3rem;
+    letter-spacing: 0.1ch;
+}
+
+.s-active-now-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.s-chat {
+    background: var(--bg-primary);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Basic styling for the chat container */
+#chat-container {
+    position: relative;
+    width: auto;
+    height: 96vh;
+
+    /*     border: 1px solid #ccc;
+ */
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for chat messages */
+#chat-messages {
+    padding: 10px;
+    width: 100%;
+}
+
+/* Styling for user input section */
+#user-input {
+    position: sticky;
+    bottom: 0%;
+    width: 99%;
+    padding: 10px;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-primary);
+}
+
+/* Styling for message input field */
+#message-input {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: var(--bg-user-input);
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+
+}
+
+/* Styling for send button */
+#send-button {
+    padding: 8px 12px;
+    background-color: var(--text-third);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling for each chat message */
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.6vh;
+}
+
+.message img {
+    width: 24vh;
+    height: 24vh;
+    margin: 15px 3px;
+}
+
+/* Styling for message profile picture */
+.message-profile img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+/* Styling for message content */
+.message-content {
+    margin-left: 10px;
+}
+
+/* Styling for message sender */
+.message-sender {
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Styling for message text */
+.message-text {
+    margin: 8px 5px;
+}
+
+/* Profile Settings CSS */
+#profile-settings-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 75px;
+    overflow-y: scroll;
+}
+
+.profile-navbar {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    background-color: var(--bg-secondary);
+    overflow: scroll;
+}
+
+.profile-navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.profile-nav-item {
+    width: 100%;
+    margin: 1.2rem;
+}
+
+.profile-nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    border-radius: 0.5rem;
+}
+
+.profile-nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+#checked-profile-nav-link {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.profile-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+}
+
+.profile-main-settings {
+    grid-column: 2;
+    background-color: var(--bg-primary);
+}
+
+.account-settings-page {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.settings-page-title {
+    font-weight: bold;
+    margin-bottom: 4rem;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+}
+
+.settings-item {
+    width: 80%;
+    height: auto;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-bottom: 2.4rem;
+}
+
+.account-main-settings {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    height: 60%;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.settings-container span {
+    margin: 5px;
+}
+
+.settings-container .title {
+    color: #fff;
+}
+
+.edit-button {
+    padding: 8px 10px;
+    margin: 10px;
+    background-color: var(--text-third);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#description-edit {
+    margin-top: 5rem;
+}
+
+/* Login Page CSS */
+#login-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+    height: 500px;
+    background-color: var(--bg-secondary);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-login {
+    color: var(--text-secondary);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.3ch;
+}
+
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-third);
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--text-third);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: var(--bg-primary);
+}
+
+.footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.main-aside {
+    background-color: var(--bg-primary);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-aside p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-aside a {
+    background-color: var(--text-third);
+    color: var(--bg-secondary);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.main-aside a:hover {
+    background-color: var(--bg-user-input);
+    color: #fff;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        top: 4vh;
+        width: 100vw;
+        height: 4rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .server-window {
+        grid-template-columns: auto 25%;
+        grid-template-rows: 4vh 100vh;
+    }
+
+    .s-chat {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .main-container {
+        margin-top: 50px;
+    }
+
+    .s-nav {
+        display: none;
+    }
+
+    .s-members-title {
+        display: none;
+    }
+
+    .members {
+        padding: 0rem;
+    }
+
+    .members p {
+        display: none;
+    }
+
+    .s-active-now-list {
+        align-items: center;
+    }
+
+    .members svg {
+        margin: 1rem;
+    }
+
+    .s-active-now-list:first-child {
+        margin-top: 50px;
+    }
+
+    .main-aside {
+        margin-top: 50px;
+    }
+
+    .header-content {
+        margin-left: 0px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header-items svg {
+        width: 1.8rem;
+        min-width: 1.5rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .main-settings-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .profile-logo {
+        margin-bottom: 0.7rem;
+        font-size: 1rem;
+        letter-spacing: 0.2ch;
+    }
+
+    .profile-nav-link {
+        height: 3rem;
+    }
+
+    .login-container {
+        height: 500px;
+    }
+
+    .settings-page-profile-picture img {
+        width: auto;
+        height: 200px;
+    }
+
+    .edit-button {
+        height: 30px;
+    }
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo svg {
+        margin-left: 11rem;
+    }
+
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+
+    .header-content {
+        margin-left: 80px;
+        position: static;
+    }
+
+    .header-items svg {
+        width: 1.8rem;
+        min-width: 1.5rem;
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .server-window {
+        grid-template-columns: minmax(225px, 240px) auto 15%;
+        grid-template-rows: 4vh 100vh;
+    }
+
+    .members {
+        padding: 0.8rem;
+    }
+
+    .main-settings-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-logo {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.3ch;
+    }
+
+    .profile-nav-link {
+        height: 5rem;
+        padding: 1rem;
+    }
+
+    .login-container {
+        width: 400px;
+    }
+
+    .settings-page-profile-picture img {
+        width: auto;
+        height: 400px;
+    }
+
+    .edit-button {
+        height: 55px;
+    }
+}
