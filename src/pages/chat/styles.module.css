@@ -1,0 +1,210 @@
+.chatContainer {
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 0.2ch;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+/* Room and users component */
+.roomAndUsersColumn {
+  background-color: var(--bg-primary);
+  padding: 10px 10px 10px 40px;
+}
+
+.roomTitle {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.usersTitle {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.usersList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 60px;
+  color: var(--text-third);
+}
+
+.usersList li {
+  margin-bottom: 12px;
+}
+
+/* Messages */
+.messagesColumn {
+  height: 95vh;
+  overflow: auto;
+  padding: 10px 10px 10px 40px;
+}
+
+.message {
+  background: var(--bg-primary);
+  border-radius: 6px;
+  margin-bottom: 24px;
+  padding: 12px;
+}
+
+.msgMeta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.msgText {
+  color: #fff;
+}
+
+/* Message input and button */
+.sendMessageContainer {
+  position: sticky;
+  height: 60px;
+  bottom: 0%;
+  width: 100%;
+  padding: 10px;
+  margin-top: 2vh;
+}
+
+.messageInput {
+  width: 80%;
+  padding: 8px;
+  background-color: var(--bg-user-input);
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+  margin: 0 10px 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 200ms ease;
+  overflow: scroll;
+  z-index: 9999;
+  height: 100vh;
+}
+
+.navbarNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar:hover .linkText {
+  display: inline;
+}
+
+.navbar:hover .logo svg {
+  margin-left: 11rem;
+}
+
+.navbar:hover .logoText {
+  left: 0px;
+}
+
+.navItem {
+  width: 100%;
+}
+
+.navItem:last-child {
+  margin-top: auto;
+}
+
+#userprofileSvg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 0.8rem;
+}
+
+.navLink svg {
+  width: 1.4rem;
+  min-width: 1.2rem;
+  margin: 0 1.5rem;
+}
+
+.linkText {
+  display: none;
+  margin-left: 1rem;
+  font-size: 16px;
+  padding: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  border: none;
+  background-color: var(--bg-primary);
+  width: 100%;
+  color: var(--text-secondary);
+}
+
+.navLink:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-third);
+}
+
+.navLink svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.faPrimary {
+  color: #ff7eee;
+}
+
+.faSecondary {
+  color: #df49a6;
+}
+
+.faPrimary,
+.faSecondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.logoText {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
