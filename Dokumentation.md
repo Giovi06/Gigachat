@@ -33,16 +33,17 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage                                                          | Eingabe                                                                             | Erwartete Ausgabe                                                                                             |
-| ---- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 1.1  | Das Spiel läuft.                                                      | Der Spieler versucht, den Charakter zu bewegen.                                     | Der Charakter bewegt sich entsprechend der Eingabe des Spielers.                                              |
-| 2.1  | Das Spiel befindet sich im Hauptmenü.                                 | Der Spieler klickt auf die Starttaste im Hauptmenü.                                 | Das Spiel startet und die Spielumgebung wird geladen.                                                         |
-| 3.1  | Das Spiel läuft und der Spielercharakter hat einen Gesundheitsbalken. | Der Spielercharakter erleidet Schaden.                                              | Der Gesundheitsbalken des Charakters wird aktualisiert, um den verlorenen Gesundheitszustand anzuzeigen.      |
-| 4.1  | Das Spiel läuft.                                                      | Der Spieler beobachtet die Bewegungen des Charakters.                               | Der Charakter zeigt flüssige und ansprechende Animationen entsprechend seinen Aktionen.                       |
-| 5.1  | Das Spiel läuft und der Spielercharakter kann gegen Gegner kämpfen.   | Der Spielercharakter greift einen Gegner an.                                        | Der Gegner erleidet Schaden, die Healthbar sinkt.                                                             |
-| 6.1  | Das Spiel läuft und der Spieler hat das Spiel beendet.                | Der Spieler beendet das Spiel oder erreicht ein Game Over.                          | Die Game Over Scene wird angezeigt, um den Spieler über das Spielende zu informieren.                         |
-| 8.1  | Der Spielercharakter kann sich bewegen.                               | Der Spieler versucht, den Charakter ducken zu lassen und sich langsamer zu bewegen. | Der Charakter duckt sich und bewegt sich langsamer, um es dem Spieler zu ermöglichen, Angriffen auszuweichen. |
-|      |                                                                       |                                                                                     |                                                                                                               |
+| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
+| ---- | ------------ | ------- | ----------------- |
+| 1    | Der Benutzer ist nicht angemeldet. | Der Benutzer versucht, sich mit gültigen Anmeldeinformationen anzumelden. | Der Benutzer sollte erfolgreich angemeldet sein und Zugang zu den Chaträumen haben. |
+| 2    | Der Benutzer ist in einem Chatraum. | Der Benutzer sendet eine Nachricht. | Die Nachricht sollte im Chatraum erscheinen. |
+| 3    | Der Benutzer ist in mehreren Chaträumen. | Der Benutzer sendet gleichzeitig Nachrichten in verschiedenen Chaträumen. | Die Nachrichten sollten in den entsprechenden Chaträumen erscheinen. |
+| 4    | Der Benutzer besucht die Webseite. | Der Benutzer navigiert durch die Webseite. | Die Webseite sollte ein ansprechendes Design haben. |
+| 5    | Es sind andere Benutzer in den Chaträumen online. | Der Benutzer überprüft die Liste der online Benutzer. | Der Benutzer sollte sehen können, wer online ist. |
+| 6    | Der Benutzer verwendet die Webseite. | Der Benutzer navigiert durch die Webseite und sendet Nachrichten. | Die Webseite sollte stabil und zuverlässig funktionieren. |
+| 7    | Der Benutzer ist angemeldet. | Der Benutzer überprüft seine Kontoeinstellungen. | Die persönlichen Daten des Benutzers sollten sicher sein. |
+| 8    | Der Benutzer möchte eine private Nachricht senden. | Der Benutzer sendet eine private Nachricht an einen anderen Benutzer. | Die private Nachricht sollte nur vom beabsichtigten Empfänger gesehen werden können. |
+
 
 ## 2 Planen
 
