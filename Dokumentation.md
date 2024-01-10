@@ -22,14 +22,14 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 
 | US-№ | Verbindlichkeit | Typ (Funktional oder Qualität) | Beschreibung                                                                                                                            |
 | ---- | --------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Muss            |  F  |  Giovanni Innamorato soll sich über das Projekt informieren und seine Programmierkenntnisse auffrischen.     |
-| 2    | Muss            |  F  |  Giuliano Martullo soll eine Planung erstellen, die alle Ziele enthält, die wir erreichen wollen und wer diese erreichen soll.        |
-| 3    | Muss            |  F  |  Alle sollen gründliche und intensive Recherchen durchführen, um zu lernen, wie man eine Webanwendung erstellt. |
-| 4    | Muss            |  F  |  Giovanni Innamorato soll das Grundgerüst für unsere Webseite verbessern und das Design entscheiden, um eine benutzerfreundliche Oberfläche zu gewährleisten. |
-| 5    | Muss            |  F  |  Giuliano Martullo soll die Funktion zum Einloggen in die Chats implementieren, um die Benutzerinteraktion zu ermöglichen.         |
-| 6    | Muss            |  F  |  Steven Salie soll die Funktion zum Senden von Nachrichten implementieren, um die Kommunikation zwischen den Benutzern zu ermöglichen.                                 |
-| 7    | Muss            |  F  |  Giovanni Innamorato soll die Möglichkeit implementieren, dass mehrere Benutzer auf einem Gerät zusammen schreiben können.                                       |
-| 8    | Muss            |  Q  |  Alle haben die Applikation in Visual Studio Code erstellt, in der man in verschiedenen Räumen zusammen kommunizieren kann. Wir haben eine effektive Kommunikationsplattform bereitgestellt und arbeiten nun daran, das Design der Webseite zu verbessern und zu optimieren.      |
+| 1    | Muss            |  F  |  Als Benutzer möchte ich mich auf der Webseite anmelden können, um Zugang zu den Chaträumen zu erhalten.     |
+| 2    | Muss            |  F  |  Als Benutzer möchte ich Nachrichten in den Chaträumen senden können, um mit anderen Benutzern zu kommunizieren.        |
+| 3    | Muss            |  F  |  Als Benutzer möchte ich in verschiedenen Chaträumen gleichzeitig schreiben können, um mit mehreren Gruppen gleichzeitig zu interagieren. |
+| 4    | Muss            |  F  |  Als Benutzer möchte ich, dass die Webseite ein ansprechendes Design hat, um meine Benutzererfahrung zu verbessern. |
+| 5    | Muss            |  F  |  Als Benutzer möchte ich sehen können, wer in den Chaträumen online ist, um zu wissen, mit wem ich gerade kommuniziere         |
+| 6    | Muss            |  F  |  Als Benutzer möchte ich, dass die Webseite stabil und zuverlässig funktioniert, um eine unterbrechungsfreie Kommunikation zu gewährleisten.                                |
+| 7    | Muss            |  F  |  Als Benutzer möchte ich, dass meine persönlichen Daten sicher sind, um meine Privatsphäre zu schützen.                                      |
+| 8    | Muss            |  Q  |  Als Benutzer möchte ich die Möglichkeit haben, private Nachrichten an andere Benutzer zu senden, um vertrauliche Gespräche zu führen.      |
 
 ### 1.3 Testfälle
 
