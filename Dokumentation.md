@@ -80,9 +80,9 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 | ---- | ----- | -------- | -------- |
 | 1  | 08.11 | OK       | Giuliano |
 | 2  | 08.11 | OK       | Giuliano |
-| 3  | 08.11 | OK       | Giuliano |
+| 3  | 08.11 | NOK       | Giuliano |
 | 4  | 08.11 | OK       | Giuliano |
 | 5  | 08.11 | OK       | Giuliano |
-| 6  | 08.11 | OK       | Giuliano |
+| 6  | 08.11 | NOK       | Giuliano |
 | 8  | 08.11 | NOK      | Giuliano |
 
