@@ -6,29 +6,30 @@ Giovanni Innamorato, Giuliano Martullo, Steven Salie
 
 | Datum    | Version | Zusammenfassung                                                          |
 | -------- | ------- | ------------------------------------------------------------------------ |
-| 20.09.23 | 0.0.1   | Funktionierendes Playermovement                                          |
-| 18.10.23 | 0.0.2   | Main Menu erstellt, Healthbar erstellt, Player animationen implementiert |
-| 25.10.23 | 0.1     | Funktionierende Healthbar und Main Menu scene                            |
-| 01.11.23 | 1.0.0   | Player combat funktioniert, Game Over Scene erstellt, Sounds hinzugefügt |
+| 15.11.23 | 0.0.1   | Wir haben uns Informiert was wir machen sollen und haben uns in den Programmiersprachen aufgefrischt.|
+| 22.11.23 | 0.0.2   | Wir haben zusammen eine Planung erstellt mit all den Zielen die wir erreichen wollen und wer diese machen soll. |
+| 29.11.23 | 0.1     | Wir haben uns gründlich und intensiv an die recherche gesetzt wie man eine Web-Applikation zu erstellen |
+| 06.12.23 | 0.1     | Wir haben das Grundgerüst für unsere Webseite verbessert und das Design entschieden.|
+| 13.12.23 | 1.0.0   | Einloggen in die Chats funktioniert, das senden von Nachrichten funktioniert und man kann mit mehreren Benutzern zusammen schreiben auf einem Gerät. |
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-Wir haben in Unity ein 2D Street Fighter im Pixel Design erstellt.
+Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschiedenen Räumen zusammen kommunizieren kann.
 
 ### 1.2 User Stories
 
-| US-№ | Verbindlichkeit | Typ | Beschreibung                                                                                                                            |
+| US-№ | Verbindlichkeit | Typ (Funktional oder Qualität) | Beschreibung                                                                                                                            |
 | ---- | --------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Muss            | F   | Als ein Spieler möchte ich, dass das Player-Movement funktioniert, damit ich meinen Charakter im Spiel steuern kann.                    |
-| 2    | Muss            | F   | Als ein Spieler möchte ich, dass das Main Menu erstellt wird, damit ich das Spiel starten und navigieren kann.                          |
-| 3    | Muss            | F   | Als ein Spieler möchte ich, dass die Healthbar erstellt wird, damit ich den Gesundheitszustand meines Charakters im Auge behalten kann. |
-| 4    | Muss            | F   | Als ein Spieler möchte ich, dass die Player-Animationen implementiert werden, um eine flüssige und ansprechende Spielgrafik zu haben.   |
-| 5    | Muss            | F   | Als ein Spieler möchte ich, dass das Player-Combat funktioniert, damit ich gegen Gegner kämpen und das Spiel geniessen kann.            |
-| 6    | Muss            | F   | Als ein Spieler möchte ich, dass die Game Over Scene erstellt wird, um den Spielabschluss anzuzeigen.                                   |
-| 7    | Muss            | Q   | Als ein Spieler möchte ich, dass Sounds hinzugefügt werden, um das Spielerlebnis zu verbessern.                                         |
-| 8    | Muss            | F   | Als ein Spieler möchte ich mich ducken können, und dabei möchte ich langsamer fortbewegen können, um besser ausweichen zu können.       |
+| 1    | Muss            |  F  |  Giovanni Innamorato soll sich über das Projekt informieren und seine Programmierkenntnisse auffrischen.     |
+| 2    | Muss            |  F  |  Giuliano Martullo soll eine Planung erstellen, die alle Ziele enthält, die wir erreichen wollen und wer diese erreichen soll.        |
+| 3    | Muss            |  F  |  Alle sollen gründliche und intensive Recherchen durchführen, um zu lernen, wie man eine Webanwendung erstellt. |
+| 4    | Muss            |  F  |  Giovanni Innamorato soll das Grundgerüst für unsere Webseite verbessern und das Design entscheiden, um eine benutzerfreundliche Oberfläche zu gewährleisten. |
+| 5    | Muss            |  F  |  Giuliano Martullo soll die Funktion zum Einloggen in die Chats implementieren, um die Benutzerinteraktion zu ermöglichen.         |
+| 6    | Muss            |  F  |  Steven Salie soll die Funktion zum Senden von Nachrichten implementieren, um die Kommunikation zwischen den Benutzern zu ermöglichen.                                 |
+| 7    | Muss            |  F  |  Giovanni Innamorato soll die Möglichkeit implementieren, dass mehrere Benutzer auf einem Gerät zusammen schreiben können.                                       |
+| 8    | Muss            |  Q  |  Alle haben die Applikation in Visual Studio Code erstellt, in der man in verschiedenen Räumen zusammen kommunizieren kann. Wir haben eine effektive Kommunikationsplattform bereitgestellt und arbeiten nun daran, das Design der Webseite zu verbessern und zu optimieren.      |
 
 ### 1.3 Testfälle
 
