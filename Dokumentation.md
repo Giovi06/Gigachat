@@ -47,19 +47,17 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 
 ## 2 Planen
 
-| AP-№ | Frist    | Zuständig | Beschreibung                                                                                                          | geplante Zeit |
-| ---- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------- | ------------- |
-| 1.A  | 20.09.23 | Giovanni  | Implementierung des grundlegenden Player-Movements, einschliesslich Bewegung nach links und rechts.                   | 180'          |
-| 1.B  | 20.09.23 | Giovanni  | Implementierung von zusätzlichen Bewegungsaktionen wie Springen und Ducken.                                           | 180'          |
-| 2.A  | 18.10.23 | Steven    | Erstellung des Hauptmenüs mit Optionen wie "Play", "Options" und "Quit."                                              | 180'          |
-| 3.A  | 18.10.23 | Giuliano  | Implementierung der Healthbar, die den Gesundheitszustand des Spielers anzeigt.                                       | 180'          |
-| 4.A  | 18.10.23 | Giovanni  | Implementierung von grundlegenden Animationen für den Spielercharakter, einschliesslich Laufen, Springen und Ducken.  | 120'          |
-| 5.A  | 1.11.23  | Giovanni  | Implementierung von Grundmechaniken für den Spielerkampf, einschliesslich Angriff und Verteidigung.                   | 240'          |
-| 6.A  | 1.11.23  | Steven    | Erstellung der Game Over Scene, die dem Spieler das Spielende anzeigt.                                                | 120'          |
-| 7.A  | 1.11.23  | Giuliano  | Hinzufügen von Soundeffekten und Hintergrundmusik, um das Spielerlebnis zu bereichern.                                | 180'          |
-| 8.A  | 1.11.23  | Giovanni  | Implementierung der Fähigkeit des Spielers, sich zu ducken und dabei langsamer zu bewegen, um Angriffen auszuweichen. | 180'          |
-| 9.A  | 08.11.23 | Alle      | Dokumentation schreiben                                                                                               | 30 '          |
-| 9.B  | 08.11.23 | Alle      | Portfolio schreiben                                                                                                   | 90'           |
+| AP-№ | Frist    | Zuständig | Beschreibung                                                                                                          | geplante Zeit (Minuten) |
+| ---- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 1    | 15.11    | Giuliano  | Implementierung der Anmeldefunktion auf der Webseite.                                                                 | 90                      |
+| 2    | 22.11    | Steven    | Implementierung der Funktion zum Senden von Nachrichten in den Chaträumen.                                            | 120                     |
+| 3    | 29.11    | Giovanni  | Implementierung der Funktion zum gleichzeitigen Schreiben in verschiedenen Chaträumen.                                 | 180                     |
+| 4    | 6.12     | Giuliano  | Verbesserung des Webseiten-Designs für eine bessere Benutzererfahrung.                                                 | 120                     |
+| 5    | 13.12    | Steven    | Implementierung der Funktion zum Anzeigen von online Benutzern in den Chaträumen.                                      | 90                      |
+| 6    | 20.12    | Giovanni  | Gewährleistung der Stabilität und Zuverlässigkeit der Webseite für eine unterbrechungsfreie Kommunikation.             | 180                     |
+| 7    | 27.12    | Giuliano  | Implementierung von Sicherheitsmaßnahmen zum Schutz der persönlichen Daten der Benutzer.                                | 180                     |
+| 8    | 3.1      | Steven    | Implementierung der Funktion zum Senden von privaten Nachrichten an andere Benutzer.                                   | 120                     |
+                                                                                               | 90'           |
 
 ## 3 Realisieren
 
