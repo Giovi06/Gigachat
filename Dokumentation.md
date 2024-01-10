@@ -63,19 +63,14 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 
 | AP-№ | Datum    | Zuständig                  | Geplante Zeit | Tatsächliche Zeit |
 | ---- | -------- | -------------------------- | ------------- | ----------------- |
-| 1.A  | 20.09.23 | Giovanni                   | 180 Minuten   | 180 Minuten       |
-| 1.B  | 20.09.23 | Giovanni                   | 180 Minuten   | 180 Minuten       |
-| 9.A  | 20.09.23 | Giovanni                   | 10            | 10                |
-| 2.A  | 18.10.23 | Steven                     | 180 Minuten   | 180 Minuten       |
-| 3.A  | 18.10.23 | Giuliano                   | 180 Minuten   | 180 Minuten       |
-| 4.A  | 18.10.23 | Giovanni                   | 120 Minuten   | 120 Minuten       |
-| 9.A  | 18.10.23 | Giuliano                   | 10            | 10                |
-| 5.A  | 01.11.23 | Giovanni                   | 240 Minuten   | 240 Minuten       |
-| 6.A  | 01.11.23 | Steven                     | 120 Minuten   | 120 Minuten       |
-| 7.A  | 01.11.23 | Giuliano                   | 180 Minuten   | 180 Minuten       |
-| 8.A  | 01.11.23 | Giovanni                   | 180 Minuten   | 180 Minuten       |
-| 9.A  | 01.11.23 | Steven                     | 10            | 10                |
-| 9.B  | 08.11.23 | Steven, Giovanni, Giuliano | 90 Minuten    | 90 Minuten        |
+| 1    | 15.11.23 | Giuliano                   | 90 Minuten    | 120 Minuten              |
+| 2    | 22.11.23 | Steven                     | 120 Minuten   | 120 Minuten              |
+| 3    | 29.11.23 | Giovanni                   | 180 Minuten   | 200 Stunden              |
+| 4    | 6.12.23  | Giuliano                   | 120 Minuten   | 100 Minuten              |
+| 5    | 13.12.23 | Steven                     | 90 Minuten    | 60 Minuten               |
+| 6    | 20.12.23 | Giovanni                   | 180 Minuten   | 240 Minuten               |
+| 7    | 27.12.23 | Giuliano                   | 180 Minuten   | 180 Minuten               |
+| 8    | 3.1.24   | Steven                     | 120 Minuten   | 180 Minuten               |
 
 ## 4 Kontrollieren
 
@@ -83,11 +78,11 @@ Wir haben in Visual Studio Code eine Applikation erstellt in der man in verschie
 
 | TC-№ | Datum | Resultat | Tester   |
 | ---- | ----- | -------- | -------- |
-| 1.1  | 08.11 | OK       | Giuliano |
-| 2.1  | 08.11 | OK       | Giuliano |
-| 3.1  | 08.11 | OK       | Giuliano |
-| 4.1  | 08.11 | OK       | Giuliano |
-| 5.1  | 08.11 | OK       | Giuliano |
-| 6.1  | 08.11 | OK       | Giuliano |
-| 8.1  | 08.11 | NOK      | Giuliano |
+| 1  | 08.11 | OK       | Giuliano |
+| 2  | 08.11 | OK       | Giuliano |
+| 3  | 08.11 | OK       | Giuliano |
+| 4  | 08.11 | OK       | Giuliano |
+| 5  | 08.11 | OK       | Giuliano |
+| 6  | 08.11 | OK       | Giuliano |
+| 8  | 08.11 | NOK      | Giuliano |
 
